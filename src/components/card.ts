@@ -15,10 +15,6 @@ export class Card extends Component {
     this.render();
   }
 
-  render() {
-    super.render();
-  }
-
   createTemplate() {
     return `
    <li> ${this.pokemon.name} </li>

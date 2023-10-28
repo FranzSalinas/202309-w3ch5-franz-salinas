@@ -32,12 +32,13 @@ export class List extends Component {
   render() {
     this.template = this.createTemplate();
     super.render();
-    return this.pokemon.results.map((item) => new Card('ul', item));
+    return this.pokemon.results.map((item: number) => new Card('ul', item));
   }
 
   createTemplate() {
     return `
-    <ul></ul>   
+    <ul class= ul-list></ul>
+    <footer> Pueblo paleta </footer>   
     `;
   }
 }
