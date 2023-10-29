@@ -2,7 +2,6 @@
   "name": "202309-w3ch4-franz-salinas",
   "version": "1.0.0",
   "description": "Week 3 - Challenge 5",
-  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
