@@ -1,5 +1,5 @@
 li {
-  background-color: yellow;
+  background-color: #ffcc01;
   list-style-type: none;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   width: 18rem;
@@ -14,8 +14,21 @@ li {
     margin: 0;
     padding-top: 1rem;
   }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
 
 .image-container {
   padding-top: 1rem;
+}
+
+.pokemon-name {
+  color: black;
 }
