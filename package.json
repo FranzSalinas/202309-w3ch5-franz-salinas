@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "build:ts": "tsc -w",
     "test": "jest --watchAll --coverage",
-    "test:pro": "jest --watchAll --coverage --watchAll=false --passWithNoTests",
+    "test:prod": "jest --watchAll --coverage --watchAll=false --passWithNoTests",
     "test:coverage": "jest --watchAll --coverage",
     "prepare": "husky install",
     "sass": "sass scss:css -w --no-source-map",
