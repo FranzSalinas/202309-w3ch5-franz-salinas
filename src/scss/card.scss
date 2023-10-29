@@ -7,8 +7,15 @@ li {
   margin-top: 3rem;
   text-align: center;
   border-radius: 10%;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+
+  p {
+    margin: 0;
+    padding-top: 1rem;
+  }
 }
 
 .image-container {
-  padding-top: 3.5rem;
+  padding-top: 1rem;
 }

@@ -6,9 +6,11 @@ import { Component } from './components';
 export class List extends Component {
   pokemon: Pokemon[];
   repo: ApiRepo;
+  firtsPage: number;
 
   constructor(selector: string) {
     super(selector);
+    this.firtsPage = 1;
     this.repo = new ApiRepo();
     this.pokemon = [];
     this.loadPokemon();
@@ -27,6 +29,28 @@ export class List extends Component {
     } catch (error) {
       console.log((error as Error).message);
     }
+  }
+
+  handlePreviousPage() {
+    if (this.firtsPage === 1) {
+      this.firtsPage = 1;
+    } else {
+      this.firtsPage -= 1;
+    }
+
+    this.clear();
+    this.render();
+  }
+
+  handleNextPage() {
+    if (this.firtsPage === 300) {
+      this.firtsPage = 300;
+    } else {
+      this.firtsPage += 1;
+    }
+
+    this.clear();
+    this.render();
   }
 
   render() {
