@@ -16,8 +16,11 @@ export class Card extends Component {
   }
 
   createTemplate() {
+    const id = this.pokemon.url.split('/').filter(Boolean).pop();
     return `
-   <li> ${this.pokemon.name} </li>
+  
+   <li> ${id} <div class = image-container><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${id}.gif" height="120" width="120"></div>
+   ${this.pokemon.name} </li>
       `;
   }
 }
