@@ -15,13 +15,13 @@ export class Card extends Component {
     this.render();
   }
 
-  render() {
-    super.render();
-  }
-
   createTemplate() {
+    const id = this.pokemon.url.split('/').filter(Boolean).pop();
     return `
-   <li> ${this.pokemon.name} </li>
+  
+    <li><p> ${id} </p> <a href="https://pokeapi.co/api/v2/pokemon/${this.pokemon.name}"> 
+    <div class = image-container><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${id}.gif" height="120" width="120"></div>
+    <p class = "pokemon-name">${this.pokemon.name}</p> </a></li>
       `;
   }
 }

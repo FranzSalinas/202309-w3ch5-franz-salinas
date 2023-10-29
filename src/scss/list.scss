@@ -2,12 +2,20 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=League+Spartan:wght@400;500;600;700&family=Nunito:wght@300;700&display=swap');
+
 ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding-bottom: 3rem;
+  padding-top: 3rem;
+  padding-left: 10rem;
 }
 
 body {
   background-color: rgba(11, 32, 121, 0.818);
+}
+
+footer {
+  text-align: center;
 }

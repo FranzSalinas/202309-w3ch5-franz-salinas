@@ -10,8 +10,9 @@ export class Header extends Component {
 
   createTemplate() {
     return `
-      <header class="main-header">
+      <header role='heading' class="main-header">
       <<img class= "main-logo" src="International_Pokémon_logo.svg.png" alt="Logo de Pokemon">
+      <h1>Poke</h1>
       </header>
     <div class="main-container">
     </div>
