@@ -31,28 +31,6 @@ export class List extends Component {
     }
   }
 
-  handlePreviousPage() {
-    if (this.firtsPage === 1) {
-      this.firtsPage = 1;
-    } else {
-      this.firtsPage -= 1;
-    }
-
-    this.clear();
-    this.render();
-  }
-
-  handleNextPage() {
-    if (this.firtsPage === 300) {
-      this.firtsPage = 300;
-    } else {
-      this.firtsPage += 1;
-    }
-
-    this.clear();
-    this.render();
-  }
-
   render() {
     this.template = this.createTemplate();
     super.render();
